@@ -1,0 +1,92 @@
+
+html,body{
+    height: 100%;
+    width: 100%;
+  }
+  .container{
+    height: 100%;
+    width: 100%;
+  }
+  .compContainer{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:white
+  }
+  .buttonDiv{
+    display: flex;
+  }
+  .quoteBox{
+     border: 1px solid black;
+     height: 100px;
+     width : 580px;
+     margin-left: 170px;
+     border-radius: 20px;
+     margin-top: 35px;
+     background-color: #f1f1eb;
+     padding: 10px;
+   
+  }
+  .tweetButton{
+    margin-left: 40px;
+  }
+  .facebookButton{
+     
+  }
+  .quoteButton{
+    margin-left: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    box-shadow: 0 5px 30px -6px white, 0 5px 30px -6px black;
+    border: none;
+  }
+  .author{
+   margin-left: 700px;
+    color: white;
+  }
+  .compContainer >.quoteBox{
+    flex: 7;
+  }
+  .compContainer >.author{
+    flex: 1;
+  }
+  .compContainer >.buttonDiv{
+    flex: 0.5;
+  }
+  .compContainer >.quoteButton{
+    flex: 1;
+  }
+  
+  .btn{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 30%;
+    background: black;
+    color: white;
+    box-shadow: 0 5px 30px -6px white, 0 5px 30px -6px black;
+    border: none;
+  }
+  .tooltip{
+    position: relative;
+  }
+  .tooltip .text{
+    display: none;
+  }
+  .tooltip:hover .text{
+    display: block;
+  }
+  .tooltip .facetext{
+    display: none;
+  }
+  .tooltip:hover .facetext{
+    display: block;
+  }
