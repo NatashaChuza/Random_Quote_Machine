@@ -1,9 +1,10 @@
-import React from 'react';
-function QuoteBox(props){
-    return(
+import React from "react";
+
+function QuoteBox(props) {
+  return (
     <div className="quoteBox">
-      <h1> "  {props.quote} "</h1>
-      </div>
-    )
-  }
-  export default QuoteBox;
+      <h1> " {props.quote} "</h1>
+    </div>
+  );
+}
+export default QuoteBox;
