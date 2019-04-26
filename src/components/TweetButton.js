@@ -1,10 +1,22 @@
 import React from "react";
 
 function TweetButton(props) {
-  console.log(props);
+  // you can have a function like this or you directly add it on the onclick
+  function openLink() {
+    window.open(
+      `https://twitter.com/intent/tweet?text=${
+        props.quote
+      }&hashtags=ITweetedThisFromMyFreeCodeCampReactApp`,
+      "_blank"
+    );
+    return;
+  }
   return (
-    <button className="tweetButton btn tooltip">
-      {" "}
+    <button
+      onClick={openLink}
+      className="tweetButton btn tooltip fab fa-twitter tooltip"
+    >
+      {/* {" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -15,8 +27,9 @@ function TweetButton(props) {
         )}
       >
         <i className="fab fa-twitter tooltip" />
-      </a>
-      <span className="text"> Tweet this quote</span>
+      </a> */}
+      {/* <span className="text"> Tweet this quote</span> */}
+      Tweet Quote
     </button>
   );
 }

@@ -28,6 +28,7 @@ class App extends React.Component {
         quote: res.data.quotes[rand].quote
       });
     });
+
     // alternatively you can make use the fetch without a third party tool like axios
     // the following requires no package and works just fine 😀
 
