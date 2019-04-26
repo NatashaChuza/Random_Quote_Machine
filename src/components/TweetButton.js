@@ -7,6 +7,7 @@ function TweetButton(props) {
       {" "}
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href={encodeURI(
           `https://twitter.com/intent/tweet?text=${
             props.quote
