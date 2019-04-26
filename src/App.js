@@ -41,7 +41,8 @@ class App extends React.Component{
       < GenQuote onClick={this.handleClick}/>
       </div>
     )
-  }
+
+      }
 }
 
 export default App;
